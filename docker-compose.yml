@@ -11,12 +11,13 @@ services:
       - caddy_data:/data
       - caddy_config:/config
     environment:
-      - DOMAIN=meu-dominio.aqui
+      - DOMAIN=duckdns.org
     networks:
       - app_network
 
 include:
   - path: '/var/www/ux-dona-fatima.duckdns.org/docker-compose.yml'
+  - path: '/var/www/dona-fatima.duckdns.org/docker-compose.yml'
 
 networks:
   app_network:
