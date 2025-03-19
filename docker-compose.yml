@@ -19,8 +19,8 @@ services:
       - app_network
 
 include:
-  - path: '/var/www/ux-dona-fatima.${DOMAIN}/docker-compose.yml'
-  - path: '/var/www/dona-fatima.${DOMAIN}/docker-compose.yml'
+  - path: '/var/www/${UX_APP}.${DOMAIN}/docker-compose.yml'
+  - path: '/var/www/${PRODUCTION_APP}.${DOMAIN}/docker-compose.yml'
 
 networks:
   app_network:
