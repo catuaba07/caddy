@@ -3,5 +3,5 @@ ux-dona-fatima.{$DOMAIN} {
 }
 
 dona-fatima.{$DOMAIN} {
-    reverse_proxy pwa-app:81
+    reverse_proxy pwa-app:80
 }
