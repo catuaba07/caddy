@@ -2,6 +2,10 @@
     reverse_proxy {$UX_APP}:80
 }
 
+{$DEVELOPMENT_APP}.{$DOMAIN} {
+    reverse_proxy {$DEVELOPMENT_APP}:80
+}
+
 {$PRODUCTION_APP}.{$DOMAIN} {
     reverse_proxy {$PRODUCTION_APP}:80
 }

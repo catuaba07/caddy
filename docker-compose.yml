@@ -12,6 +12,7 @@ services:
       - caddy_config:/config
     environment:
       - DOMAIN=${DOMAIN}
+      - DEVELOPMENT_APP=${DEVELOPMENT_APP}
       - PRODUCTION_APP=${PRODUCTION_APP}
       - TEST_APP=${TEST_APP}
       - UX_APP=${UX_APP}
