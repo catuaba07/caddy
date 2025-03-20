@@ -21,6 +21,7 @@ services:
 
 include:
   - path: '/var/www/${UX_APP}.${DOMAIN}/docker-compose.yml'
+  - path: '/var/www/${DEVELOPMENT_APP}.${DOMAIN}/docker-compose.yml'
   - path: '/var/www/${PRODUCTION_APP}.${DOMAIN}/docker-compose.yml'
 
 networks:
