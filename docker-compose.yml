@@ -1,7 +1,6 @@
 include:
   - path: '../${UX_APP}.${DOMAIN}/docker-compose.yml'
-  - path: '../${DEVELOPMENT_APP}.${DOMAIN}/docker/pre-producao/docker-
-compose.yml'
+  - path: '../${DEVELOPMENT_APP}.${DOMAIN}/docker/pre-producao/docker-compose.yml'
   - path: '../${PRODUCTION_APP}.${DOMAIN}/docker-compose.yml'
 
 services:
