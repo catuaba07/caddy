@@ -1,3 +1,9 @@
+include:
+  - path: '../${UX_APP}.${DOMAIN}/docker-compose.yml'
+  - path: '../${DEVELOPMENT_APP}.${DOMAIN}/docker/pre-producao/docker-
+compose.yml'
+  - path: '../${PRODUCTION_APP}.${DOMAIN}/docker-compose.yml'
+
 services:
   caddy:
     image: caddy:2-alpine
@@ -18,11 +24,6 @@ services:
       - UX_APP=${UX_APP}
     networks:
       - app_network
-
-include:
-  - path: '/var/www/${UX_APP}.${DOMAIN}/docker-compose.yml'
-  - path: '/var/www/${DEVELOPMENT_APP}.${DOMAIN}/docker-compose.yml'
-  - path: '/var/www/${PRODUCTION_APP}.${DOMAIN}/docker-compose.yml'
 
 networks:
   app_network:
