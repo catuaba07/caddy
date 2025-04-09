@@ -3,7 +3,7 @@
 }
 
 {$DEVELOPMENT_APP}.{$DOMAIN} {
-    reverse_proxy {$DEVELOPMENT_APP}:80
+    reverse_proxy {$DEVELOPMENT_APP}:3000
 }
 
 {$PRODUCTION_APP}.{$DOMAIN} {
